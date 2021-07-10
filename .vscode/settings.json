@@ -19,8 +19,5 @@
         "stoi",
         "tolist",
         "virginica"
-    ],
-    "python.analysis.extraPaths": [
-        "client\\src"
     ]
 }
