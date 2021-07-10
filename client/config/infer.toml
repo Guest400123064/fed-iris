@@ -1,0 +1,4 @@
+type = "infer"
+
+[model]
+path = "models/test"

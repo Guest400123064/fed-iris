@@ -1,0 +1,9 @@
+import sys
+import pathlib
+
+sys.path.insert(1, str(pathlib.Path(__file__).parent.parent))
+from src import cli
+
+
+if __name__ == '__main__':
+    cli()
