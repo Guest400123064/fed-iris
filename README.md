@@ -95,7 +95,7 @@ python ./client/bin/main train --address '127.0.0.1:8080'
 
 __IMPORTANT:__
 * Training won't start until at least __TWO__ clients are connected. However, this can be changed by configuring `flwr` [strategy](https://flower.dev/docs/strategies.html).
-* After training, the new global model __IS NOT SAVED BY THE CLIENT__. Instead, the new model is stored under `< root >/server/models` as an `.npz` file. So, for inference, please __manually__ copy the `model_params.npz` file to the `< root >/client/models` folder.
+* After training, the new global model __IS NOT SAVED BY THE CLIENT__. Instead, the new model is stored under `./server/models` as an `.npz` file. So, for inference, please __manually__ copy the `model_params.npz` file to the `./client/models` folder.
 
 ## __Future Works__
 
