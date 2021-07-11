@@ -97,11 +97,16 @@ def infer():
 
 
 @click.command()
-def train():
+@click.option(
+    '--address',
+    default='127.0.0.1:8080',
+    help='Expected format: < ip_address >:< port >'
+)
+def train(address):
 
     click.echo('[ INFO ] :: entering train mode')
     agent = InitUtils.make_agent()
-    flwr.client.start_numpy_client('127.0.0.1:8080', agent)
+    flwr.client.start_numpy_client(address, agent)
 
 
 @click.group()

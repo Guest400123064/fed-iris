@@ -37,11 +37,16 @@ class IrisStrategy(flwr.server.strategy.FedAvg):
 
 
 @click.command()
-def cli():
+@click.option(
+    '--address',
+    default='127.0.0.1:8080',
+    help='Expected format: < ip_address >:< port >'
+)
+def cli(address):
 
     strategy = IrisStrategy()
     flwr.server.start_server(
-        "127.0.0.1:8080", 
+        address, 
         config={"num_rounds": 64},
         strategy=strategy
     )

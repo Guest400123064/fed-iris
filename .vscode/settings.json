@@ -3,12 +3,14 @@
     "cSpell.ignoreWords": [
         "astype",
         "checkpt",
+        "conda",
         "curr",
         "dir",
         "errr",
         "flwr",
         "inpt",
         "itos",
+        "kgqa",
         "loadtxt",
         "ndarrays",
         "pathlib",
@@ -16,6 +18,7 @@
         "save",
         "savez",
         "setosa",
+        "softmax",
         "stoi",
         "tolist",
         "virginica"
