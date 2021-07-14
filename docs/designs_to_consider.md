@@ -3,9 +3,6 @@
 ## Client Side
 
 * Client Architecture
-  * Data-loader
-    * Dataset (batch processing)
-    * Real-time inference data-loader class?
   * Model
     * Sub-model initialization
   * Loss function class

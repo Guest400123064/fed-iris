@@ -4,10 +4,12 @@
 
 This is an prototype _Federated Machine Learning_ application, specifically a simple _Iris Classifier_ (the classical iris dataset), based on primarily `torch` and `flwr`. Moreover, this is an experimental sub-project preparing for __*Fed-KGQA System*__, or __*Federated Question-Answering System over Knowledge Graph*__. The extended abstract can be found [NOT AVAILABLE ON _arXiv_ YET](). This repo implements the _Federated Answer Selector_ module mentioned in the extended abstract.
 
+---
 ## __Pre-req__
 
 Before getting started with this repo, a quick overview of _Federated Learning_ and the `flwr` package documentation if __HIGHLY RECOMMENDED__. The `flwr` official website, [click here](https://flower.dev/).
 
+---
 ## __The General Architecture__
 
 The application adopts the canonical _Server-Clients_ architecture, where:
@@ -20,6 +22,7 @@ The application adopts the canonical _Server-Clients_ architecture, where:
 
 Each one of the two sub-modules will be discussed in detail in their own `README`. In short, both the _Client_ module (under the `client` folder) and the _Server_ module (under the `server` folder) can be viewed as independent applications that can run individually.
 
+---
 ## __Folder Structure__
 
 Before running the code, I would like to introduce how I organized the various files. The folder structures of both the server and client sub-modules are quite similar.
@@ -48,6 +51,7 @@ root
         |-- core           # discussed in client/README.md
 ```
 
+---
 ## __Quick Start__
 
 In the future I may package the source code into (publication-ready) independent applications. For now I assume that the `conda` environment is properly setup or all the dependencies are installed. 
@@ -97,6 +101,7 @@ __IMPORTANT:__
 * Training won't start until at least __TWO__ clients are connected. However, this can be changed by configuring `flwr` [strategy](https://flower.dev/docs/strategies.html).
 * After training, the new global model __IS NOT SAVED BY THE CLIENT__. Instead, the new model is stored under `./server/models` as an `.npz` file. So, for inference, please __manually__ copy the `model_params.npz` file to the `./client/models` folder.
 
+---
 ## __Future Works__
 
 Though workable, this prototype is still very "sketchy." Further developments largely fall into two broad categories:
