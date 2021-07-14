@@ -2,7 +2,7 @@
 
 ## __Overview__
 
-This is an prototype _Federated Machine Learning_ application, specifically a simple _Iris Classifier_ (the classical iris dataset), based on primarily `torch` and `flwr`. Moreover, this is an experimental sub-project preparing for __*Fed-KGQA System*__, or __*Federated Question-Answering System over Knowledge Graph*__. The extended abstract can be found [NOT AVAILABLE ON _arXiv_ YET](). This repo implements the _Federated Answer Selector_ module mentioned in the extended abstract.
+This is an prototype _Federated Machine Learning_ application, specifically a simple _Iris Classifier_ (the classical iris dataset), based on primarily `torch` and `flwr`. Moreover, this is an experimental sub-project preparing for __*Fed-KGQA System*__, or __*Federated Question-Answering System over Knowledge Graph*__. The extended abstract can be found [here](Fed-KGQA-Extended-Abstract.pdf) under the home folder. This repo implements the _Federated Answer Selector_ module mentioned in the extended abstract.
 
 ---
 ## __Pre-req__

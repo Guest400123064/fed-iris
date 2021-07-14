@@ -1,5 +1,3 @@
-# Overall Architecture
-
 ## Client Side
 
 * Client Architecture

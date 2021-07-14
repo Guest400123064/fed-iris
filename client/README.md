@@ -14,5 +14,18 @@ This is not a novel idea. A _repeatable_ machine learning project structure is t
 ---
 ## __Software Architecture__
 
+In short, there are three layers of abstraction in building an agent:
+
+* Data Loader
+  * User input reader
+  * Training dataset (batch) loader
+* Model
+  * Implements training and prediction methods
+* External API
+  * For training
+  * For inference
+
+With this architecture in mind, the code base is relative straight forward.
+
 ---
 ## __Design Problems to Consider__
