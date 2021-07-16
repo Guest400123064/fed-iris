@@ -12,6 +12,7 @@ Therefore we can extract these common modules and create separate classes for ea
 This is not a novel idea. A _repeatable_ machine learning project structure is thoroughly described in [PyTorch-Project-Template.](https://github.com/moemen95/PyTorch-Project-Template#tutorials) And I __HIGHLY RECOMMEND__ reading through their repo before preceding.
 
 ---
+
 ## __Software Architecture__
 
 In short, there are three layers of abstraction in building an agent:
@@ -28,6 +29,7 @@ In short, there are three layers of abstraction in building an agent:
 With this architecture in mind, the code base is relative straight forward.
 
 ---
+
 ## __Design Problems to Consider__
 
 ### __A Unified Agent__
@@ -49,4 +51,4 @@ Although the server will distribute the latest model to connected clients during
 
 ### __Support for Sub-model-only Training__
 
-The current classifier is simple: a single linear layer. However, if we have a humongous model with multiple sub-models and millions of parameters, we may want to adopt a __update-by-parts__ scheme, that is, we update and upload only the parameters of that specific sub-module. This feature is not available yet. 
+The current classifier is simple: a single linear layer. However, if we have a humongous model with multiple sub-models and millions of parameters, we may want to adopt a __update-by-parts__ scheme, that is, we update and upload only the parameters of that specific sub-module. This feature is not available yet.
